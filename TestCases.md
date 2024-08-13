@@ -7,11 +7,15 @@ Check if the login works when user enters the correct credentials.
 
 Steps to reproduce:
 
+
 1.Open your browser
+
 
 2.Search for eMag.ro
 
+
 3.Add correct user/pass
+
 
 4.Click "Login" button
 
