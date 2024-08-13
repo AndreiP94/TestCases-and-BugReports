@@ -1,329 +1,165 @@
-1. Sign up is not working properly
-Priority and severity
+# Bug Reports for Various Issues
 
-P1 - high
+## 1. Sign Up Issue
+**Priority and Severity:** P1 - High
 
+**Description:**
+- Error encountered during new account sign-up: “This user already exists”.
 
+**Steps to Reproduce:**
+1. Open your browser.
+2. Visit [DemoBlaze](http://www.demoblaze.com).
+3. Click the “Sign Up” button.
+4. Enter Username: `andrei` and Password: `parola`.
+5. Attempt to sign up again.
 
-Description
+**Expected Results:**
+- Successfully create a new user account.
 
-When trying to sign up for a new account there is an error “This user already exists”.
+**Actual Result:**
+- Error: “This user already exists.”
 
+**Status:** New
 
+## 2. Ordering with an Empty Cart
+**Priority and Severity:** P1 - Critical
 
-Steps to reproduce 
+**Description:**
+- Users can place an order with zero items in the cart.
 
-Open your browser
+**Steps to Reproduce:**
+1. Open your browser.
+2. Navigate to [DemoBlaze](http://www.demoblaze.com).
+3. Click the “Cart” button.
+4. Click the “Place Order” button.
+5. Enter purchase details.
+6. Press “Purchase”.
 
-Go to www.demoblaze.com
+**Expected Results:**
+- Display error message due to empty cart.
 
-Press the “Sign up” buton
+**Actual Result:**
+- Order was successful.
 
-Insert Username and Password
+**Status:** New
 
-Press the “Sign up“ buton
+## 3. Login without Credentials
+**Priority and Severity:** P1 - Critical
 
+**Description:**
+- Logging into a customer account without a username and password.
 
+**Steps to Reproduce:**
+1. Open your browser.
+2. Visit [GlobalSQA](http://www.globalsqa.com/angularJs-protractor/BankingProject/#/login).
+3. Click “Customer Login”.
+4. Select a user from the dropdown.
+5. Press “Login”.
 
-Expected results
+**Expected Results:**
+- Prompt for password.
 
-Create a new user account.
+**Actual Result:**
+- Login successful without password.
 
+**Status:** New
 
+## 4. Translation to English Not Working
+**Priority and Severity:** P3 - Normal
 
-Actual result 
+**Description:**
+- Translation feature from Romanian to English fails.
 
-A error pops up with the message “This user already exists.“
+**Steps to Reproduce:**
+1. Open your browser.
+2. Go to [Primaria Techirghiol](http://www.primariatechirghiol.ro).
+3. Click the British flag icon for English.
+4. Expect the page to translate.
 
+**Expected Results:**
+- Page should be translated to English.
 
+**Actual Result:**
+- Page remains in Romanian; unrelated list appears.
 
-Test Data 
+**Status:** New
 
-Username: andrei
+## 5. Error 404 on Navigation
+**Priority and Severity:** P2 - High
 
-Password: parola
+**Description:**
+- Error 404 when navigating from the English menu.
 
+**Steps to Reproduce:**
+1. Open your browser.
+2. Access [Primaria Techirghiol](http://www.primariatechirghiol.ro).
+3. Click the British flag icon.
+4. Try accessing “Location” from the list.
 
+**Expected Results:**
+- “Location” page in English should open.
 
-Status 
+**Actual Result:**
+- Error 404 - Not Found.
 
-New
+**Status:** New
 
-2. Ordering with an empty cart
-Priority and severity
+## 6. Presentation Video Not Working
+**Priority and Severity:** P5 - Low
 
-P1 - critical
+**Description:**
+- Presentation video fails to play.
 
+**Steps to Reproduce:**
+1. Open your browser.
+2. Navigate to [Fieni](https://fieni.ro).
+3. Scroll to “Clip de prezentare al Orasului Fieni”.
+4. Click play.
 
+**Expected Results:**
+- Video should play.
 
-Description
+**Actual Result:**
+- Video does not start.
 
-User can place a order with zero items in the cart.
+**Status:** New
 
-Steps to reproduce 
+## 7. Misaligned Icons and Text
+**Priority and Severity:** P2 - High
 
-Open your browser
+**Description:**
+- Misalignment of icons and department names.
 
- Go to www.demoblaze.com 
+**Steps to Reproduce:**
+1. Open your browser.
+2. Go to [Fieni](https://fieni.ro).
+3. Scroll to “Institutii publice de interes judetean”.
+4. Click “Mai mult”.
 
-Press the “Cart“ buton
+**Expected Results:**
+- Proper alignment of icons with text.
 
-Press the “Place Order“ buton
+**Actual Result:**
+- Icons are not aligned with text.
 
-Insert details 
+**Status:** New
 
-Press the “Purchase“ buton
+## 8. Images Not Loading
+**Priority and Severity:** P4 - Medium
 
+**Description:**
+- Images fail to load on certain sections of the website.
 
+**Steps to Reproduce:**
+1. Open your browser.
+2. Access [Fieni](https://fieni.ro).
+3. Scroll to “Institutii publice de interes judetean”.
+4. Click “Mai mult”.
 
-Expected results 
+**Expected Results:**
+- All images should load properly.
 
-Invalid purchase and error because the cart was empty.
+**Actual Result:**
+- Some images do not load.
 
-
-
-Actual result
-
-Order was succesfull.
-
-
-
-Status 
-
-New
-
-3.Login without username and password
-Priority and severity
-
-P1 - critical
-
-
-
-Description
-
-Login into a customer account without a password.
-
-
-
-Steps to reproduce
-
-Open your browser
-
-Go to www.globalsqa.com/angularJs-protractor/BankingProject/#/login 
-
-Press the “Customer Login“ buton
-
-Select a user from the dropdown bar
-
-Press the “Login“ buton
-
-
-
-Expected Results
-
-Asking for a password for the user that you choose to login with.
-
-
-
-Actual Result
-
-The login in to the account was succesfull
-
-
-
-Status
-
-New
-
-4. Translation to english not working
-Priority and severity
-
-P3 - normal
-
-
-
-Description
-
-Translation of the document from Romanian to English is not working
-
-
-
-Steps to reproduce
-
-Open your browser
-
-Go to www.primariatechirghiol.ro
-
-Press the “this menu in english“ buton(british flag shape)
-
-
-
-Expected results
-
-The page should be translated in English.
-
-
-
-Actual result
-
-The page remains in Romanian and a list named “Travel Information“ pops up
-
-
-
-Status
-
-New
-
-5. Error 404 when choose any option from Travel Information
-Priority and severity
-
-P2 - high
-
-
-
-Description
-
-When trying to open a page we get an error
-
-
-
-Steps to reproduce
-
-Open your browser
-
-Go to www.primariatechirghiol.ro 
-
-Press the “this menu in english“ buton(british flag shape)
-
-Press the “Location“ link
-
-
-
-Expected results
-
-The page “Location“ translated in English should open
-
-
-
-Actual result
-
-The page opened page has error message “ Error 404 - Not Found”
-
-Reproducible for any option of the list
-
-Status
-
-New
-
-6. Presentation video not working
-Priority and severity
-
-P5 - low
-
-Description
-
-The video prezentation on the website is not working
-
-
-
-Steps to reproduce
-
-Open your browser
-
-Go to https://fieni.ro 
-
-Scroll down to the middle of the page
-
-Press the play button with the description “Clip de prezentare al Orasului Fieni“
-
-
-
-Expented results
-
-When pressed the play button, the video should start
-
-
-
-Actual result
-
-The video is not starting
-
-
-
-Status 
-
-New
-
-7. Icons Not Aligned with Corresponding Text
-Priority and severity
-
-P2 - high
-
-Description
-
-Icons and department names are misaligned, causing visual inconsistency across the list.
-
-
-
-Steps to reproduce
-
-Open your browser
-
-Go to https://fieni.ro  
-
-Scrol down the page until you fiind “Institutii publice de interes judetean“
-
-Press the “Mai mult“ buton of that section
-
-
-
-Expented results
-
-The element from the page should be aligned properly
-
-
-
-Actual result
-
-Icons are not aligned with their respective department names, causing confusion
-
-Status 
-
-New
-
-8. Images are not loading
-Priority and severity
-
-P4 - medium
-
-Description
-
-Some images on the pages are not loading properly
-
-
-
-Steps to reproduce
-
-Open your browser
-
-Go to https://fieni.ro   
-
-Scroll down the page until you fiind “Institutii publice de interes judetean“
-
-Press the “Mai mult“ buton of that section
-
-
-
-Expented results
-
-The images coresponding with the text should be visible
-
-
-
-Actual result
-
-Only some of the images are visible and some of them are not loading
-
-Status 
-
-New
+**Status:** New
